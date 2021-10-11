@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible"
+            content="IE=edge" />
+      <meta name="viewport"
+            content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet"
+            href="estilos.css" />
+      <title>Lista de Tareas</title>
+
+      <link rel="preconnect"
+            href="https://fonts.googleapis.com">
+      <link rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Alata&family=Roboto:ital,wght@0,100;1,100&display=swap"
+            rel="stylesheet">
+
+</head>
+
+<body>
+      <h1>Lista de Tareas</h1>
+      <div id="app">
+            <button id="button-login">Iniciar Sesion</button>
+            <button id="button-logout" class="hidden">Salir</button>
+            <form id="todo-form"
+                  class="hidden">
+                  <div id="user-info"></div>
+                  <input id="todo-input"
+                         type="text"
+                         placeholder="Ingresa una nueva tarea"
+                         autocomplete="off" />
+            </form>
+
+            <div id="todos-container">
+            </div>
+      </div>
+
+      <!-- Firebase SDK (Software Development Kit) siempre se debe usar y debe ser el primero de colocar -->
+      <script src="https://www.gstatic.com/firebasejs/9.1.1/firebase-app-compat.js"></script>
+
+
+      <!-- Adicionar productos de Firebase que vamos a usar -->
+      <script src="https://www.gstatic.com/firebasejs/9.1.1/firebase-auth-compat.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/9.1.1/firebase-firestore-compat.js"></script>
+
+      <!-- UUID -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"
+              integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ=="
+              crossorigin="anonymous"
+              referrerpolicy="no-referrer"></script>
+
+      <script src="app.js"></script>
+</body>
+
+</html>
